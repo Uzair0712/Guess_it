@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 0.5px solid #eee; */
+  font-family: "press start 2p", sans-serif;
+}
+.red {
+  background-color: rgb(192, 0, 0);
+}
+.green {
+  background-color: #60b347;
+}
+.btn:hover{
+  background-color: #aaaaaa;
+}
+
+main {
+  height: 100vh;
+  color: #eee;
+  background-color: #222;
+}
+.top {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  height: 5rem;
+}
+.restart {
+  font-size: 1.5rem;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.title {
+  font-size: 3rem;
+  text-align: center;
+  margin: 1.5rem auto 2rem;
+}
+.line {
+  background-color: #eee;
+  height: 5px;
+  border: none;
+}
+.result {
+  text-align: center;
+  position: relative;
+  padding: 2rem 0;
+}
+.result-text {
+  font-size: 4rem;
+  position: absolute;
+  padding: 1rem 2rem;
+  background-color: #eee;
+  color: #414141;
+  margin: 0 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bottom-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin: 3rem 0;
+  padding: 0 8rem;
+}
+#form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 0 0 2rem;
+}
+#number {
+  color: #eee;
+  font-size: 3rem;
+  padding: 1.5rem;
+  width: 15rem;
+  border: none;
+  text-align: center;
+  border: 2px solid #eee;
+  background-color: transparent;
+}
+#number:focus {
+  outline: none;
+}
+.check {
+  font-size: 1.5rem;
+  padding: 1rem;
+  cursor: pointer;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.display {
+  display: flex;
+  font-size: 1.2rem;
+  flex-direction: column;
+  flex-basis: 400px;
+  gap: 1rem;
+}
+
+.message {
+  padding-bottom: 4rem;
+}
