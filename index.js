@@ -28,6 +28,7 @@ function resetGame() {
   message.textContent = "Start guessing...";
   resultText.textContent = "?";
   scoreElement.textContent = MAX_POSSIBLE_SCORE;
+  score = MAX_POSSIBLE_SCORE;
   input.value = "";
   checkButton.disabled = false;
   actualNumber = generateNumber();
