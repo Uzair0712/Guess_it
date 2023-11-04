@@ -4,7 +4,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* border: 0.5px solid #eee; */
   font-family: "press start 2p", sans-serif;
 }
 .red {
@@ -13,12 +12,12 @@
 .green {
   background-color: #60b347;
 }
-.btn:hover{
+.btn:hover {
   background-color: #aaaaaa;
 }
-
 main {
-  height: 100vh;
+  height: 100dvh;
+  width: 100dvw;
   color: #eee;
   background-color: #222;
 }
@@ -106,5 +105,45 @@ input::-webkit-inner-spin-button {
 }
 
 .message {
-  padding-bottom: 4rem;
+  padding-bottom: 2rem;
+}
+
+@media screen and (max-width: 640px) {
+  .restart {
+    font-size: 1rem;
+    padding: 5px 10px;
+  }
+  .range {
+    font-size: 0.8rem;
+  }
+  .title {
+    font-size: 1.5rem;
+    margin: 2rem auto;
+  }
+  .result-text {
+    font-size: 3rem;
+  }
+  .bottom-container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 2rem;
+  }
+  .display {
+    flex-basis: 200px;
+    width: 350px;
+    gap: 2rem;
+  }
+  .message {
+    text-align: center;
+    flex-basis: 80px;
+  }
+  #number {
+    font-size: 2.5rem;
+    padding: 1rem;
+  }
+  .check {
+    font-size: 1.3rem;
+    padding: 0.8rem;
+  }
 }
